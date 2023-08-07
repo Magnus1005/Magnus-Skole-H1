@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            // Her køre jeg alle mine metoder
             Console.WriteLine(MultiplicationTable());
 
             int[] numbers1 = new int[] { -5, -8, -50 };
@@ -195,8 +196,5 @@
         {
             return Math.Pow(num1, num2);
         }
-
-
-
     }
 }
