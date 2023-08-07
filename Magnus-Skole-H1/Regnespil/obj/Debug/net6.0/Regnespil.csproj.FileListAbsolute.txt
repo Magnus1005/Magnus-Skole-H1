@@ -1,0 +1,15 @@
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\bin\Debug\net6.0\Regnespil.exe
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\bin\Debug\net6.0\Regnespil.deps.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\bin\Debug\net6.0\Regnespil.runtimeconfig.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\bin\Debug\net6.0\Regnespil.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\bin\Debug\net6.0\Regnespil.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\Regnespil.csproj.AssemblyReference.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\Regnespil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\Regnespil.AssemblyInfoInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\Regnespil.AssemblyInfo.cs
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\Regnespil.csproj.CoreCompileInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\Regnespil.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\refint\Regnespil.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\Regnespil.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\Regnespil.genruntimeconfig.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole\Magnus-Skole-H1\Regnespil\obj\Debug\net6.0\ref\Regnespil.dll
