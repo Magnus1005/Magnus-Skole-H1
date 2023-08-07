@@ -216,7 +216,6 @@ namespace Regnespil
                     }
                     Clear();
                 }
-                //TEST
                 if (tryNum == 3)
                 {
                     Console.Write(randomNumber1 + " " + symbol + " " + randomNumber2 + " = " + ans + ". Press an key to countinue");

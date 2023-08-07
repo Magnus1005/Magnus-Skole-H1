@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstProject", "FirstProjec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conditional Statements", "Conditional Statements\Conditional Statements.csproj", "{0CE11A01-B49C-4D83-B281-F32AE27C4502}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regnespil", "Regnespil\Regnespil.csproj", "{606F68FC-5343-49AE-9C78-B85B90A0A41F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regnespil", "Regnespil\Regnespil.csproj", "{606F68FC-5343-49AE-9C78-B85B90A0A41F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestXUnit", "TestXUnit\TestXUnit.csproj", "{B9E4E543-766F-48DE-B627-829DBFEF5CEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops\Loops.csproj", "{769E162B-BDFA-4C76-9293-812262F8EDF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{606F68FC-5343-49AE-9C78-B85B90A0A41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{606F68FC-5343-49AE-9C78-B85B90A0A41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{606F68FC-5343-49AE-9C78-B85B90A0A41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E4E543-766F-48DE-B627-829DBFEF5CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E4E543-766F-48DE-B627-829DBFEF5CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E4E543-766F-48DE-B627-829DBFEF5CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E4E543-766F-48DE-B627-829DBFEF5CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769E162B-BDFA-4C76-9293-812262F8EDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769E162B-BDFA-4C76-9293-812262F8EDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769E162B-BDFA-4C76-9293-812262F8EDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769E162B-BDFA-4C76-9293-812262F8EDF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

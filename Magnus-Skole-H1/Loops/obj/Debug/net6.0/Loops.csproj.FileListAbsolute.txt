@@ -1,0 +1,15 @@
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\bin\Debug\net6.0\Loops.exe
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\bin\Debug\net6.0\Loops.deps.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\bin\Debug\net6.0\Loops.runtimeconfig.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\bin\Debug\net6.0\Loops.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\bin\Debug\net6.0\Loops.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\Loops.csproj.AssemblyReference.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\Loops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\Loops.AssemblyInfoInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\Loops.AssemblyInfo.cs
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\Loops.csproj.CoreCompileInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\Loops.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\refint\Loops.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\Loops.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\Loops.genruntimeconfig.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\Loops\obj\Debug\net6.0\ref\Loops.dll
