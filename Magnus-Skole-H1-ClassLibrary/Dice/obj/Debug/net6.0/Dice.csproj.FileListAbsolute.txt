@@ -1,0 +1,12 @@
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\bin\Debug\net6.0\Dice.deps.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\bin\Debug\net6.0\Dice.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\bin\Debug\net6.0\Dice.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\Dice.csproj.AssemblyReference.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\Dice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\Dice.AssemblyInfoInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\Dice.AssemblyInfo.cs
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\Dice.csproj.CoreCompileInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\Dice.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\refint\Dice.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\Dice.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1-ClassLibrary\Dice\obj\Debug\net6.0\ref\Dice.dll
