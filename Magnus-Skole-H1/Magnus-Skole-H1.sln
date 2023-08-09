@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conditional Statements", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regnespil", "Regnespil\Regnespil.csproj", "{606F68FC-5343-49AE-9C78-B85B90A0A41F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestXUnit", "TestXUnit\TestXUnit.csproj", "{B9E4E543-766F-48DE-B627-829DBFEF5CEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestXUnit", "TestXUnit\TestXUnit.csproj", "{B9E4E543-766F-48DE-B627-829DBFEF5CEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops\Loops.csproj", "{769E162B-BDFA-4C76-9293-812262F8EDF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loops", "Loops\Loops.csproj", "{769E162B-BDFA-4C76-9293-812262F8EDF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{C9389445-5C44-4CD0-A204-338A45B223E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{769E162B-BDFA-4C76-9293-812262F8EDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{769E162B-BDFA-4C76-9293-812262F8EDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{769E162B-BDFA-4C76-9293-812262F8EDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9389445-5C44-4CD0-A204-338A45B223E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9389445-5C44-4CD0-A204-338A45B223E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9389445-5C44-4CD0-A204-338A45B223E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9389445-5C44-4CD0-A204-338A45B223E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

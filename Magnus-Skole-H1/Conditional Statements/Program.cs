@@ -99,8 +99,18 @@ namespace ConditionalStatements
         public static bool IsLeapYear(int year)
         {
             // Tjekker om året er et skudår ved at se om 4 går op i året
-            if ((year % 4) == 0) { return true; }
-            else { return false; }
+            if ((year % 4) == 0)
+            {
+                if ((year % 100) == 0)
+                {
+                    if(year % 400 == 0)
+                    {
+                        return true;
+                    }
+                }
+                else { return true; }
+            }
+            return false;
         }
     }
 }
