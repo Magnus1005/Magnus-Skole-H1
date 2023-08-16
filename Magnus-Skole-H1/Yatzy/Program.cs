@@ -8,6 +8,7 @@ namespace Yatzy
 
         static void Main(string[] args)
         {
+            // Array med alle de mulige ting man kan vælge i spillet.
             string[] linjer = new string[] { "one", "two", "three", "four", "five", "six", "onePair", "twoPair", "threeIdentical", "fourIdentical", "smallStraight", "bigStraight", "house", "chance", "yatzy" };
             Console.WriteLine("Welcome to yatzy. To start the game press any key");
 
@@ -200,6 +201,7 @@ namespace Yatzy
             return gameResult;            
         }
 
+        // Det er den metode der bruges til at køre den hvor at man kan vælge terningerne om de skal gemmes eller ej ved at trykke space og det gør man ved at gå op og ned på piltasterne. Når man så er færdig ved at trykke enter vil den retunere en liste over index på de terninger der skal gemmes.
         public static List<int> ChooseOptionsDise(List<int> Options, string Prompt)
         {
             int index = 0;
@@ -248,6 +250,7 @@ namespace Yatzy
             return result;
         }
 
+        // Det er det display modul der bruges til at display de terninger der lige er rullet og gør det muligt også at highligte den valgte ud fra et index men også skrive On Hold bag på dem der er givet i listen der hedder chossenIndex.
         public static void DispalyOptionsDise(string Prompt, List<int> Options, int SelectedIndex, List<int> chossenIndexes)
         {
             Console.WriteLine(Prompt);
@@ -291,6 +294,7 @@ namespace Yatzy
             Console.ResetColor();
         }
 
+        // Den metode der bruges til at køre vores display modul hvor at den gør det muligt at bruge piltasterne til at køre op og ned og enter for at vælge den og det er så indexet på den valgte den vi retunere.
         public static int[] ChooseOptionsRemaning(List<string> Options, string Prompt)
         {
             int index = 0;
@@ -326,6 +330,7 @@ namespace Yatzy
             return output;
         }
 
+        // Display modul til at vise de muligheder der er og den highligter den valgte ud fra den index.
         public static void DispalyOptionsRemaning(string Prompt, List<string> Options, int SelectedIndex)
         {
             Console.WriteLine(Prompt);
@@ -352,6 +357,7 @@ namespace Yatzy
             Console.ResetColor();
         }
 
+        // Henter alle linjer der har værdien true under status da de endnu ikke har brugt den så og retunere en liste over dem der ikke er brugt endnu.
         public static List<string> GetRemaning(DataTable data)
         {
             List<string> remaning = new List<string>();
@@ -367,6 +373,7 @@ namespace Yatzy
             return remaning;
         }
 
+        // Public class der bruges til at lave listen over alle spillere med deres navn, points og deres personlige datatabel.
         public class Players
         {
             public string Name { get; set; }
@@ -375,6 +382,7 @@ namespace Yatzy
             public DataTable values = new DataTable();
         }
 
+        // Lægger alle værdierne sammen under spillerens datatabel og sætter den ind i det felt der hedder points
         public static List<Players> GetScorre(List<Players> players)
         {
             foreach (Players p in players)
@@ -405,6 +413,7 @@ namespace Yatzy
             return players;
         }
 
+        // En metode der bruges til at kalde de andre metoder udfra et givet navn.
         public static int RunAction(string action, List<int> list)
         {
             switch (action)
@@ -554,6 +563,7 @@ namespace Yatzy
             }
         }
 
+        // Bruges til at regne dem samme i et to tre osv. Tæller hvor mange der er og så ganger den med tallet for at få værdien
         public static int CountSame(List<int> list, int number)
         {
             var listWithTheNumbers = list.Where(x => x == number).ToList();
@@ -567,6 +577,7 @@ namespace Yatzy
             }            
         }
 
+        // Bruges til at tjekke om der er et par eller to par
         public static int Pair(List<int> list, int number)
         {
             List<int> seenNumbers = new List<int>();
@@ -579,7 +590,7 @@ namespace Yatzy
                 {
                     pairsFound++;
                     pairValues.Add(num);
-                    seenNumbers.Remove(num); // Remove one occurrence of the pair
+                    seenNumbers.Remove(num);
                 }
                 else
                 {
@@ -612,6 +623,7 @@ namespace Yatzy
             return points;
         }
 
+        // Bruges til at tjekke om du har 3 eller fire af den samme værdi.
         public static int Identical(List<int> list, int number)
         {
             List<int> seenNumbers = new List<int>();
@@ -620,7 +632,7 @@ namespace Yatzy
             {
                 if (seenNumbers.Where(x => x == num).Count() >= number - 1)
                 {
-                    theNumber = num; // Found a duplicate pair
+                    theNumber = num;
                     break;
                 }
                 seenNumbers.Add(num);
@@ -632,6 +644,7 @@ namespace Yatzy
             return theNumber * number;
         }
 
+        // Bruges til at tjekke om der er en stor eller lille straight.
         public static int Straight(List<int> list, string type)
         {
             if (type == "small")
@@ -678,6 +691,7 @@ namespace Yatzy
             throw new Exception("Not found. Not big or small.");
         }
 
+        // Bruges til at tjekke om der er et hus.
         public static int House(List<int> list)
         {
             var grouped = list.GroupBy(value => value);
@@ -697,6 +711,7 @@ namespace Yatzy
             }
         }
 
+        // Lægger alle værdierne sammen da alle kan bruges til chancen
         public static int Chance(List<int> list)
         {
             int points = 0;
@@ -707,6 +722,7 @@ namespace Yatzy
             return points;
         }
 
+        // Bruges til at tjekke om der er yatzy
         public static int Yatzy(List<int> list)
         {
             bool isYatzy = list.All(value => value == list[0]);
