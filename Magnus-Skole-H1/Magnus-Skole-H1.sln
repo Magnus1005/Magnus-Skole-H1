@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestXUnit", "TestXUnit\Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loops", "Loops\Loops.csproj", "{769E162B-BDFA-4C76-9293-812262F8EDF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{C9389445-5C44-4CD0-A204-338A45B223E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strings", "Strings\Strings.csproj", "{C9389445-5C44-4CD0-A204-338A45B223E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddManOut", "OddManOut\OddManOut.csproj", "{91183C7E-DC4D-4E41-B7C0-6F3F7C733EFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OddManOut", "OddManOut\OddManOut.csproj", "{91183C7E-DC4D-4E41-B7C0-6F3F7C733EFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerningSpil", "TerningSpil\TerningSpil.csproj", "{54C3CC71-C312-4F51-B247-AAA876498CD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerningSpil", "TerningSpil\TerningSpil.csproj", "{54C3CC71-C312-4F51-B247-AAA876498CD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy", "Yatzy\Yatzy.csproj", "{F60EC82C-4EDF-459B-B7EF-4B8CBAD30BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{54C3CC71-C312-4F51-B247-AAA876498CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54C3CC71-C312-4F51-B247-AAA876498CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54C3CC71-C312-4F51-B247-AAA876498CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F60EC82C-4EDF-459B-B7EF-4B8CBAD30BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60EC82C-4EDF-459B-B7EF-4B8CBAD30BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60EC82C-4EDF-459B-B7EF-4B8CBAD30BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60EC82C-4EDF-459B-B7EF-4B8CBAD30BC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
