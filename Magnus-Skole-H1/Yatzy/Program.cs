@@ -10,22 +10,28 @@ namespace Yatzy
         {
             // Array med alle de mulige ting man kan vælge i spillet.
             string[] linjer = new string[] { "one", "two", "three", "four", "five", "six", "onePair", "twoPair", "threeIdentical", "fourIdentical", "smallStraight", "bigStraight", "house", "chance", "yatzy" };
+
+            // Introduktion
             Console.WriteLine("Welcome to yatzy. To start the game press any key");
+            Console.ReadKey();
 
             Console.WriteLine("Please enter a name and prees enter when all players are pute in type done and press enter");
+            // Kalder metode til at få alle spillerne der skal være med og lægger dem i en liste
             List<Players> players = GetPlayer(linjer);
 
-            var gameResul = Game(players, linjer);
-
+            // Her kalder jeg spillet
+            var gameResult = Game(players, linjer);
             Console.Clear();
 
+            // Spillet er slut og jeg skriver resultatet atf spillet til consollen
             Console.WriteLine("The game is over. Here are the results\n");
-            foreach(var player in gameResul)
+            foreach(var player in gameResult)
             {
                 Console.WriteLine($"{player.Name}: {player.Points}");
             }
         }
 
+        // Denne metode bruges til at brugeren skal intaste de navne der skal være med i spillet og når alle er tastet in skrive done. Den laver et tjek for at sikre sig at man minimum er to spillere og så retunere den en liste med de spiller der er med og et tomt datatable.
         public static List<Players> GetPlayer(string[] linjer)
         {
             bool isDone = false;
@@ -83,10 +89,13 @@ namespace Yatzy
             return players;
         }
 
+        // Dette er selve spillet.
         public static List<Players> Game(List<Players> players, string[] linjer)
         {
+            // Laver en liste til terningerne.
             List<DiceClass> dices = new List<DiceClass>();
 
+            // Tilføjer 5 terninger med 6 side til listen.
             int diceCount = 0;
             while (diceCount < 5)
             {
@@ -97,6 +106,7 @@ namespace Yatzy
 
             bool winnerFound = false;
 
+            // Køre indtil der er fundet en vinder
             while(winnerFound == false)
             {
                 foreach (var player in players)
@@ -144,7 +154,6 @@ namespace Yatzy
                     foreach(var dice in rollResult)
                     {
                         promtString += $"Dice {resultCount}: {dice}\n";
-                        //Console.WriteLine($"Dice {resultCount}: {dice}");
                         resultCount++;
                     }
 
@@ -196,8 +205,10 @@ namespace Yatzy
                     Console.Clear();
                 }
             }
+            // Spillet er slut og getScore kaldes for at regne deres scorre ud
             var gameResult = GetScorre(players);
 
+            // Spillet retunere listen over spillerne og deres scorre
             return gameResult;            
         }
 

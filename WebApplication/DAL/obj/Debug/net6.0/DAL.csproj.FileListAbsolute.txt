@@ -1,0 +1,12 @@
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\WebApplication\DAL\obj\Debug\net6.0\ref\DAL.dll
