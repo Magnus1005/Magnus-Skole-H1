@@ -18,15 +18,15 @@ namespace Front.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-        public IActionResult Student()
-        {
-            List<DAL.DalClass.DataList> data = BLL.BllClass.HentAltData();
-            return View(data);
-        }
+        //public IActionResult Privacy()
+        //{
+        //    return View();
+        //}
+        //public IActionResult Student()
+        //{
+        //    List<DAL.DalClass.DataList> data = BLL.BllClass.HentAltData();
+        //    return View(data);
+        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
