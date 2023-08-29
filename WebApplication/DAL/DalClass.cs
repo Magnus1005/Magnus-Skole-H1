@@ -41,6 +41,14 @@ namespace DAL
             var JsonData = JsonConvert.SerializeObject(altData);
             File.WriteAllText("C:\\Users\\MagnusNissen\\OneDrive - HOUSE4IT A S\\Dokumenter\\GitHub\\Magnus-Skole-H1\\WebApplication\\DAL\\MOCK_DATA.json", JsonData);
         }
+        public static void OpretLinje(DAL.DalClass.DataList data)
+        {
+            var altData = HentData();
+            altData.Add(data);
+
+            var JsonData = JsonConvert.SerializeObject(altData);
+            File.WriteAllText("C:\\Users\\MagnusNissen\\OneDrive - HOUSE4IT A S\\Dokumenter\\GitHub\\Magnus-Skole-H1\\WebApplication\\DAL\\MOCK_DATA.json", JsonData);
+        }
 
         public class DataList
         {

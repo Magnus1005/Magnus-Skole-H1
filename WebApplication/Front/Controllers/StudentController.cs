@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BLL;
+using System.Linq;
+using NuGet.Packaging.Signing;
 
 namespace Front.Controllers
 {
@@ -28,10 +30,33 @@ namespace Front.Controllers
         // POST: StudentController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(DAL.DalClass.DataList collection)
         {
             try
             {
+                if (collection.id == 0)
+                {
+                    var altData = BLL.BllClass.HentAltData();
+                    altData.OrderBy(n => n.id).ToArray();
+                    bool idFound = false;
+                    int idCount = 1;
+
+                    while (idFound == false)
+                    {
+                        var linjerData = altData.Where(x => x.id == idCount).FirstOrDefault();
+                        if (linjerData == null)
+                        {
+                            collection.id = idCount;
+                            idFound = true;
+                        }
+                        else
+                        {
+                            idCount++;
+                        }
+                    }
+
+                    BLL.BllClass.OpretLinje(collection);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -66,16 +91,18 @@ namespace Front.Controllers
         // GET: StudentController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var data = BLL.BllClass.HentLinjeData(id);
+            return View(data);
         }
 
         // POST: StudentController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, DAL.DalClass.DataList collection)
         {
             try
             {
+                BLL.BllClass.SletLinje(collection);
                 return RedirectToAction(nameof(Index));
             }
             catch

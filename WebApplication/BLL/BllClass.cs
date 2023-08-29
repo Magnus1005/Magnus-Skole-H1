@@ -29,6 +29,10 @@ namespace BLL
         {
             DAL.DalClass.SletAlt(data);
         }
+        public static void OpretLinje(DAL.DalClass.DataList data)
+        {
+            DAL.DalClass.OpretLinje(data);
+        }
 
     }
 }

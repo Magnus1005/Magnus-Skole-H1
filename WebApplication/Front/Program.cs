@@ -1,3 +1,5 @@
+using Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns;
+
 namespace Front
 {
     public class Program
@@ -28,7 +30,7 @@ namespace Front
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");           
 
             app.Run();
         }
