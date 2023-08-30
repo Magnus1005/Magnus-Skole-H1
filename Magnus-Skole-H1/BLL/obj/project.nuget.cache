@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qf88Lo03FYEyxbvtqOhfzzpclvH4ic4/ONliUow9xzFZtksdzZeEfbjZz9cvaROWEluxgJn/ua+0vVgtwNvc0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MagnusNissen\\OneDrive - HOUSE4IT A S\\Dokumenter\\GitHub\\Magnus-Skole-H1\\Magnus-Skole-H1\\BLL\\BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MagnusNissen\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
