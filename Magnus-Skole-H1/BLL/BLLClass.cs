@@ -3,31 +3,37 @@ namespace BLL
 {
     public class BllClass
     {
-        public static List<DAL.Kunde> HentAltData()
+        private string databasePath;
+        private DALClass _dal = new DALClass();
+        public BllClass(string path = "Database.json")
         {
-            var data = DAL.DALClass.HentData();
+            this.databasePath = path;
+        }
+        public List<DAL.Kunde> HentAltData()
+        {
+            var data = _dal.HentData();
             return data.OrderBy(x => x.firstName).ToList();
         }
-        public static DAL.Kunde HentLinjeData(int id)
+        public DAL.Kunde HentLinjeData(int id)
         {
-            var data = DAL.DALClass.HentData().Where(x => x.cprNummer == id).FirstOrDefault();
+            var data = _dal.HentData().Where(x => x.cprNummer == id).FirstOrDefault();
             return data;
         }
-        public static void RetLinje(DAL.Kunde data)
+        public void RetLinje(DAL.Kunde data)
         {
-            DAL.DALClass.RetLinje(data);
+            _dal.RetLinje(data);
         }
-        public static void SletLinje(DAL.Kunde data)
+        public void SletLinje(DAL.Kunde data)
         {
-            DAL.DALClass.SletLinje(data);
+            _dal.SletLinje(data);
         }
-        public static void SletAlt(List<DAL.Kunde> data)
+        public void SletAlt(List<DAL.Kunde> data)
         {
-            DAL.DALClass.SletAlt(data);
+            _dal.SletAlt(data);
         }
-        public static void OpretLinje(DAL.Kunde data)
+        public void OpretLinje(DAL.Kunde data)
         {
-            DAL.DALClass.OpretLinje(data);
+            _dal.OpretLinje(data);
         }
 
     }

@@ -3,14 +3,19 @@ namespace DAL
 {
     public class DALClass
     {
-        public static string databasePath = "C:\\Users\\MagnusNissen\\OneDrive - HOUSE4IT A S\\Dokumenter\\GitHub\\Magnus-Skole-H1\\Magnus-Skole-H1\\BLL\\Database.json";
-        public static List<Kunde> HentData()
+        private string databasePath;
+
+        public DALClass(string path = "Database.json")
+        {
+            databasePath = path;
+        }
+        public List<Kunde> HentData()
         {            
             string JsonData = File.ReadAllText(databasePath);
             var data = JsonConvert.DeserializeObject<List<Kunde>>(JsonData);
             return data;
         }
-        public static void RetLinje(Kunde data)
+        public void RetLinje(Kunde data)
         {
             var altData = HentData();
             altData.Remove(altData.Where(x => x.cprNummer == data.cprNummer).FirstOrDefault());
@@ -19,7 +24,7 @@ namespace DAL
             var JsonData = JsonConvert.SerializeObject(altData);
             File.WriteAllText(databasePath, JsonData);
         }
-        public static void SletLinje(Kunde data)
+        public  void SletLinje(Kunde data)
         {
             var altData = HentData();
             altData.Remove(altData.Where(x => x.cprNummer == data.cprNummer).FirstOrDefault());
@@ -27,7 +32,7 @@ namespace DAL
             var JsonData = JsonConvert.SerializeObject(altData);
             File.WriteAllText(databasePath, JsonData);
         }
-        public static void SletAlt(List<Kunde> data)
+        public  void SletAlt(List<Kunde> data)
         {
             var altData = HentData();
             altData.Clear();
@@ -35,7 +40,7 @@ namespace DAL
             var JsonData = JsonConvert.SerializeObject(altData);
             File.WriteAllText(databasePath, JsonData);
         }
-        public static void OpretLinje(Kunde data)
+        public  void OpretLinje(Kunde data)
         {
             List<Kunde> altData = new List<Kunde>();
             try
@@ -63,11 +68,21 @@ namespace DAL
         public string lastName { get; set; }
         public decimal totalSaldo { get; set; }
         public List<konti> konti { get; set; }
+
+        public override string ToString()
+        {
+            return "CPR Nummer: " + cprNummer + ". Navn: " + firstName + " " + lastName;
+        }
     }
 
     public class konti
     {
         public string navn { get; set; }
         public decimal saldo { get; set; }
+
+        public override string ToString()
+        {
+            return "konto Navn: " + navn + ". Saldo: " + saldo;
+        }
     }
 }
