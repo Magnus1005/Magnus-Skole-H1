@@ -1,10 +1,13 @@
 ﻿//Eksempel på funktionel kodning hvor der kun bliver brugt et model lag
 
+using System;
+using System.Data.SqlTypes;
+using System.Reflection;
+
 namespace Plukliste;
 
 class PluklisteProgram
 {
-
     static void Main()
     {
         //Arrange
@@ -35,65 +38,13 @@ class PluklisteProgram
             }
 
             //Print options
-            Console.WriteLine("\n\nOptions:");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("Q");
-            Console.ForegroundColor = standardColor;
-            Console.WriteLine("uit");
-            if (index >= 0)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("A");
-                Console.ForegroundColor = standardColor;
-                Console.WriteLine("fslut plukseddel");
-            }
-            if (index > 0)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("F");
-                Console.ForegroundColor = standardColor;
-                Console.WriteLine("orrige plukseddel");
-            }
-            if (index < files.Count - 1)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("N");
-                Console.ForegroundColor = standardColor;
-                Console.WriteLine("æste plukseddel");
-            }
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("G");
-            Console.ForegroundColor = standardColor;
-            Console.WriteLine("enindlæs pluksedler");
+            dispalyOptions(index, options, files);
 
             readKey = Console.ReadKey().KeyChar;
             if (readKey >= 'a') readKey -= (char)('a' - 'A'); //HACK: To upper
             Console.Clear();
 
-            Console.ForegroundColor = ConsoleColor.Red; //status in red
-            switch (readKey)
-            {
-                case 'G':
-                    files = Directory.EnumerateFiles("export").ToList();
-                    index = -1;
-                    Console.WriteLine("Pluklister genindlæst");
-                    break;
-                case 'F':
-                    if (index > 0) index--;
-                    break;
-                case 'N':
-                    if (index < files.Count - 1) index++;
-                    break;
-                case 'A':
-                    //Move files to import directory
-                    var filewithoutPath = files[index].Substring(files[index].LastIndexOf('\\'));
-                    File.Move(files[index], string.Format(@"import\\{0}", filewithoutPath));
-                    Console.WriteLine($"Plukseddel {files[index]} afsluttet.");
-                    files.Remove(files[index]);
-                    if (index == files.Count) index--;
-                    break;
-            }
-            Console.ForegroundColor = standardColor; //reset color
+            index = runAction(files, index, readKey);
 
         }
     }
@@ -134,5 +85,59 @@ class PluklisteProgram
             }
         }
         file.Close();
+    }
+    public static void dispalyOptions(int index, List<string> options, List<string> files)
+    {
+        Console.WriteLine("\n\nOptions:");
+
+        foreach (var item in options)
+        {
+            if (item == "Afslut plukseddel" && index < 0)
+            {
+                continue;
+            }
+            if (item == "Forrige plukseddel" && index <= 0)
+            {
+                continue;
+            }
+            if(item == "Næste plukseddel" && index >= files.Count - 1)
+            {
+                continue;
+            }
+            char firstLetter = item[0];
+            string restOfWord = item.Substring(1);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(firstLetter);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(restOfWord);
+        }
+    }
+    public static int runAction(List<string> files, int index, char readKey)
+    {
+        Console.ForegroundColor = ConsoleColor.Red; //status in red
+        switch (readKey)
+        {
+            case 'G':
+                files = Directory.EnumerateFiles("export").ToList();
+                index = 0;
+                Console.WriteLine("Pluklister genindlæst");
+                break;
+            case 'F':
+                if (index > 0) index--;
+                break;
+            case 'N':
+                if (index < files.Count - 1) index++;
+                break;
+            case 'A':
+                //Move files to import directory
+                var filewithoutPath = files[index].Substring(files[index].LastIndexOf('\\'));
+                File.Move(files[index], string.Format(@"import\\{0}", filewithoutPath));
+                Console.WriteLine($"Plukseddel {files[index]} afsluttet.");
+                files.Remove(files[index]);
+                if (index == files.Count) index--;
+                break;
+        }
+        Console.ForegroundColor = ConsoleColor.White; //reset color
+        return index;
     }
 }
