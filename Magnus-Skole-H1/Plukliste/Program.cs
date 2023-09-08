@@ -1,6 +1,4 @@
-﻿//Eksempel på funktionel kodning hvor der kun bliver brugt et model lag
-
-using System;
+﻿using System;
 using System.Data.SqlTypes;
 using System.Reflection;
 
@@ -8,22 +6,23 @@ namespace Plukliste;
 
 class PluklisteProgram
 {
+    public static BLL _bll;
+    public static char readKey;
     static void Main()
     {
+        _bll = new BLL("import", "export");
         //Arrange
-        char readKey = ' ';
+        readKey = ' ';
         List<string> files;
-        var index = 0;
-        var standardColor = Console.ForegroundColor;
+
 
         string importPath = "import";
         string exportPath = "export";
 
-        pathCheck(importPath, exportPath);
+        pathCheck(importPath);
+        pathCheck(exportPath);
 
         files = Directory.EnumerateFiles(exportPath).ToList();
-
-        List<string> options = new List<string>() { "Quit", "Afslut plukseddel", "Forrige plukseddel", "Næste plukseddel", "Genindlæs pluksedler" };
 
         //ACT
         while (readKey != 'Q')
@@ -34,43 +33,34 @@ class PluklisteProgram
             }
             else
             {
-                displayPlukliste(index, files);
+                displayPlukliste();
             }
 
             //Print options
-            dispalyOptions(index, options, files);
+            dispalyOptions();
 
             readKey = Console.ReadKey().KeyChar;
             if (readKey >= 'a') readKey -= (char)('a' - 'A'); //HACK: To upper
             Console.Clear();
 
-            index = runAction(files, index, readKey);
+            runAction();
 
         }
     }
-    public static void pathCheck(string importPath, string exportPath)
+    public static void pathCheck(string path)
     {
-        if (!Directory.Exists(importPath))
+        if (!Directory.Exists(path))
         {
-            Console.WriteLine($"Directory \"{importPath}\" not found. It has now been created.");
-            Directory.CreateDirectory(importPath);
-        }
-
-        if (!Directory.Exists(exportPath))
-        {
-            Console.WriteLine($"Directory \"{exportPath}\" not found. It has now been created.");
-            Directory.CreateDirectory(exportPath);
+            Console.WriteLine($"Directory \"{path}\" not found. It has now been created.");
+            Directory.CreateDirectory(path);
         }
     }
-    public static void displayPlukliste(int index, List<string> files)
+    public static void displayPlukliste()
     {
-        Console.WriteLine($"Plukliste {index + 1} af {files.Count}");
-        Console.WriteLine($"\nFile: {files[index]}");
 
-        //read file
-        FileStream file = File.OpenRead(files[index]);
-        System.Xml.Serialization.XmlSerializer xmlSerializer = new System.Xml.Serialization.XmlSerializer(typeof(Pluklist));
-        Pluklist plukliste = (Pluklist?)xmlSerializer.Deserialize(file);
+        Pluklist plukliste = _bll.getFile();
+        Console.WriteLine($"Plukliste {plukliste.Status.fileIndex + 1} af {plukliste.Status.totalFileCount}");
+        Console.WriteLine($"\nFile: {plukliste.Status.fileName}");
 
         //print plukliste
         if (plukliste != null && plukliste.Lines != null)
@@ -84,26 +74,15 @@ class PluklisteProgram
                 Console.WriteLine(item.ToString());
             }
         }
-        file.Close();
+        //file.Close();
     }
-    public static void dispalyOptions(int index, List<string> options, List<string> files)
+    public static void dispalyOptions()
     {
         Console.WriteLine("\n\nOptions:");
+        List<string> options = _bll.getOptions();
 
         foreach (var item in options)
         {
-            if (item == "Afslut plukseddel" && index < 0)
-            {
-                continue;
-            }
-            if (item == "Forrige plukseddel" && index <= 0)
-            {
-                continue;
-            }
-            if(item == "Næste plukseddel" && index >= files.Count - 1)
-            {
-                continue;
-            }
             char firstLetter = item[0];
             string restOfWord = item.Substring(1);
             Console.ForegroundColor = ConsoleColor.Green;
@@ -112,32 +91,44 @@ class PluklisteProgram
             Console.WriteLine(restOfWord);
         }
     }
-    public static int runAction(List<string> files, int index, char readKey)
-    {
+    public static void runAction()
+    {        
+        List<string> options = _bll.getOptions();
+
+        bool validOption = false;
+
+        foreach (var item in options)
+        {
+            if (item[0] == readKey)
+            {
+                validOption = true;
+            }
+        }
+        if (validOption == false)
+        {
+            return;
+        }
         Console.ForegroundColor = ConsoleColor.Red; //status in red
+
         switch (readKey)
         {
             case 'G':
-                files = Directory.EnumerateFiles("export").ToList();
-                index = 0;
+                _bll.reloadFiles();
                 Console.WriteLine("Pluklister genindlæst");
                 break;
             case 'F':
-                if (index > 0) index--;
+                _bll.previous();
                 break;
             case 'N':
-                if (index < files.Count - 1) index++;
+                _bll.next();
                 break;
             case 'A':
                 //Move files to import directory
-                var filewithoutPath = files[index].Substring(files[index].LastIndexOf('\\'));
-                File.Move(files[index], string.Format(@"import\\{0}", filewithoutPath));
-                Console.WriteLine($"Plukseddel {files[index]} afsluttet.");
-                files.Remove(files[index]);
-                if (index == files.Count) index--;
+                string response = _bll.moveFile();
+                Console.WriteLine(response);
                 break;
         }
         Console.ForegroundColor = ConsoleColor.White; //reset color
-        return index;
+        return;
     }
 }
