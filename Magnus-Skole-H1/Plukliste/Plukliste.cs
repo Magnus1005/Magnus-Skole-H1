@@ -14,7 +14,8 @@ public class Pluklist
     {
         string name = String.Format("\n{0, -13}{1}", "Name:", Name);
         string forsendelse = String.Format("\n{0, -13}{1}", "Forsendelse:", Forsendelse);
-        return name + forsendelse;
+        string adresse = String.Format("\n{0, -13}{1}", "Adresse:", Adresse);
+        return name + forsendelse + adresse;
     }
 }
 
@@ -33,13 +34,16 @@ public class StatusData
 {
     public int fileIndex;
     public string fileName;
-    public int totalFileCount;    
+    public int totalFileCount;
 }
 
 public enum ItemType
 {
     Fysisk, Print
 }
+
+
+
 
 
 

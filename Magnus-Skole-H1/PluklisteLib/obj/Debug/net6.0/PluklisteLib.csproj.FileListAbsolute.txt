@@ -1,0 +1,11 @@
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\obj\Debug\net6.0\PluklisteLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\obj\Debug\net6.0\PluklisteLib.AssemblyInfoInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\obj\Debug\net6.0\PluklisteLib.AssemblyInfo.cs
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\obj\Debug\net6.0\PluklisteLib.csproj.CoreCompileInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\bin\Debug\net6.0\PluklisteLib.deps.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\bin\Debug\net6.0\PluklisteLib.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\bin\Debug\net6.0\PluklisteLib.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\obj\Debug\net6.0\PluklisteLib.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\obj\Debug\net6.0\refint\PluklisteLib.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\obj\Debug\net6.0\PluklisteLib.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteLib\obj\Debug\net6.0\ref\PluklisteLib.dll

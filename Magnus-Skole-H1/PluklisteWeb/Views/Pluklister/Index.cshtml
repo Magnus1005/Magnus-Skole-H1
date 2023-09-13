@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Plukliste.Pluklist>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Pluklist oversigt</h1>
+
+<h3>Total file count: @Html.DisplayFor(modelItem => Model.FirstOrDefault().Status.totalFileCount)</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Forsendelse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adresse)
+            </th>
+            <th>
+                Antal linjer
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Forsendelse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adresse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lines.Count)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  filename=item.Status.filePath  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

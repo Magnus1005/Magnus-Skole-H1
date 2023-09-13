@@ -1,0 +1,55 @@
+﻿
+@model IEnumerable<Plukliste.Pluklist>
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4>Pluksedel: @Html.DisplayFor(Model => Model.FirstOrDefault().Status.fileName) </h4>
+<h4>Navn: @Html.DisplayFor(Model => Model.FirstOrDefault().Name) </h4>
+<h4>Adresse: @Html.DisplayFor(Model => Model.FirstOrDefault().Adresse) </h4>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Varenummer
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lines.FirstOrDefault().Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lines.FirstOrDefault().Type)
+            </th>
+            <th>
+                Plukliste antal
+            </th>
+            <th>
+                Vare lager antal
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.FirstOrDefault().Lines) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+                <td>
+                    1
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

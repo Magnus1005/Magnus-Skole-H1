@@ -10,24 +10,23 @@ class PluklisteProgram
     public static char readKey;
     static void Main()
     {
-        _bll = new BLL("import", "export");
-        //Arrange
-        readKey = ' ';
-        List<string> files;
-
-
         string importPath = "import";
         string exportPath = "export";
+        string letterPath = "print";
+        string letterTemplatePath = "letterTemplates";
 
         pathCheck(importPath);
         pathCheck(exportPath);
+        pathCheck(letterPath);
+        _bll = new BLL(importPath, exportPath);
+        //Arrange
+        readKey = ' ';
 
-        files = Directory.EnumerateFiles(exportPath).ToList();
 
         //ACT
         while (readKey != 'Q')
         {
-            if (files.Count == 0)
+            if (_bll.readListOfFiles().Count == 0)
             {
                 Console.WriteLine("No files found.");
             }
@@ -67,7 +66,6 @@ class PluklisteProgram
         {
             Console.WriteLine(plukliste.ToString());
 
-            //TODO: Add adresse to screen print
             Console.WriteLine("\n{0,-7}{1,-9}{2,-20}{3}", "Antal", "Type", "Produktnr.", "Navn");
             foreach (var item in plukliste.Lines)
             {

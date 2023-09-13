@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Gy9uBCm20Z1pevjZdtDOStGz+iD3wfqcEnFrEZEvw9i5ijslfxex7e8h93LwQTKXLmkaVXlUCVlfQ1Lqvzo2kg==",
+  "dgSpecHash": "wDGFYfKONK+AYbzhKiC8lck6YK5/hw2Ng2yiHxHqZs2ISjpJ3tW0MbrvpUOoiJdpR82X2eyRt1iA8+m0ACEdhA==",
   "success": true,
   "projectFilePath": "C:\\Users\\MagnusNissen\\OneDrive - HOUSE4IT A S\\Dokumenter\\GitHub\\Magnus-Skole-H1\\Magnus-Skole-H1\\Plukliste\\Plukliste.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\MagnusNissen\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
