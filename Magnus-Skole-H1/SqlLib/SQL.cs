@@ -35,11 +35,12 @@ namespace SqlLib
             foreach(var pluk in pluklister)
             {
                 pluk.kunde_navn = kunder.Where(x => x.kunde_id == pluk.kunde_id).FirstOrDefault().full_name;
-                pluk.kune_adresse = kunder.Where(x => x.kunde_id == pluk.kunde_id).FirstOrDefault().adresse;
+                pluk.kunde_adresse = kunder.Where(x => x.kunde_id == pluk.kunde_id).FirstOrDefault().adresse;
                 pluk.forsendelse = forsendelser.Where(x => x.forsendelse_id == pluk.forsendelse_id).FirstOrDefault().forsendelses_type;
                 pluk.antal_linjer = pluklisteLinjer.Where(x => x.master_id == pluk.plukliste_id).Count();
+                pluk.linjer = GetPluklisteLinjer(pluk.plukliste_id);
             }
-            return pluklister;
+            return pluklister.Where(x => x.is_done == false).ToList();
         }
         public Pluklister GetPlukliste(int id)
         {
@@ -52,20 +53,23 @@ namespace SqlLib
         {
             List<PluklisteLinjer> allePluklisteLinjer = (List<PluklisteLinjer>)_sqlinterface.getTableData(new PluklisteLinjer(), "pluklisteLinjer");
             List<PluklisteLinjer> linjerForDenne = allePluklisteLinjer.Where(x => x.master_id == id).ToList();
+            List<Vare> varer = GetVarer();
+            foreach(var linje in linjerForDenne)
+            {
+                linje.vare_type = varer.Where(x => x.varenummer == linje.vare).FirstOrDefault().vare_type;
+                linje.vare_antal_paa_lager = varer.Where(x => x.varenummer == linje.vare).FirstOrDefault().paa_lager;
+            }
             return linjerForDenne;
         }
+
+        public void AfslutPlukseddel(int id)
         {
-
+            _sqlinterface.AfslutPluksedel(id);
         }
-
-        //public long AfslutPlukseddel()
-        //{
-
-        //}
-        //public Vare OpdaterLagerantal()
-        //{
-
-        //}
+        public void OpdaterLagerantal(string varenummer, int paa_lager)
+        {
+            _sqlinterface.OpdaterLager(varenummer, paa_lager);
+        }
 
 
 

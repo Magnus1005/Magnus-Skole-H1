@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Plukliste.Pluklist>
+﻿@model IEnumerable<SqlLib.Pluklister>
 
 @{
     ViewData["Title"] = "Index";
@@ -6,19 +6,19 @@
 
 <h1>Pluklist oversigt</h1>
 
-<h3>Total file count: @Html.DisplayFor(modelItem => Model.FirstOrDefault().Status.totalFileCount)</h3>
+<h3>Total file count: @Model.Count()</h3>
 
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Navn
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Forsendelse)
+                Forsendelse
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Adresse)
+                Adresse
             </th>
             <th>
                 Antal linjer
@@ -30,19 +30,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.kunde_navn)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Forsendelse)
+                @Html.DisplayFor(modelItem => item.forsendelse)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Adresse)
+                @Html.DisplayFor(modelItem => item.kunde_adresse)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Lines.Count)
+                @Html.DisplayFor(modelItem => item.antal_linjer)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new {  filename=item.Status.filePath  })
+                @Html.ActionLink("Edit", "Edit", new {  id=item.plukliste_id  })
             </td>
         </tr>
 }

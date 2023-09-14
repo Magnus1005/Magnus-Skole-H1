@@ -1,13 +1,14 @@
-﻿
-@model IEnumerable<Plukliste.Pluklist>
+﻿@model IEnumerable<SqlLib.Pluklister>
 
 @{
     ViewData["Title"] = "Edit";
 }
+<button type="button" class="btn btn-primary" onclick="window.location.href = '@Url.Action("Index", "Pluklister")'">Tilbage</button>
+<h4>Pluksedel ID: @Html.DisplayFor(Model => Model.FirstOrDefault().plukliste_id) </h4>
+<h4>Navn: @Html.DisplayFor(Model => Model.FirstOrDefault().kunde_navn) </h4>
+<h4>Adresse: @Html.DisplayFor(Model => Model.FirstOrDefault().kunde_adresse) </h4>
 
-<h4>Pluksedel: @Html.DisplayFor(Model => Model.FirstOrDefault().Status.fileName) </h4>
-<h4>Navn: @Html.DisplayFor(Model => Model.FirstOrDefault().Name) </h4>
-<h4>Adresse: @Html.DisplayFor(Model => Model.FirstOrDefault().Adresse) </h4>
+
 
 
 <table class="table">
@@ -17,10 +18,10 @@
                 Varenummer
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Lines.FirstOrDefault().Title)
+                Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Lines.FirstOrDefault().Type)
+                Type
             </th>
             <th>
                 Plukliste antal
@@ -32,24 +33,33 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.FirstOrDefault().Lines) {
+@foreach (var item in Model.FirstOrDefault().linjer) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ProductID)
+                @Html.DisplayFor(modelItem => item.vare)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
+                @Html.DisplayFor(modelItem => item.navn)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Type)
+                @Html.DisplayFor(modelItem => item.vare_type)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Amount)
+                @Html.DisplayFor(modelItem => item.antal)
             </td>
-                <td>
-                    1
-                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vare_antal_paa_lager)
+            </td>
         </tr>
 }
     </tbody>
 </table>
+
+<form method="post" asp-controller="Pluklister" asp-action="OnPostAfslutPluksedel">
+    <input type="hidden" name="id" value="@Model.FirstOrDefault().plukliste_id" />
+    <button type="submit" class="btn btn-primary">Gem</button>
+</form>
+
+
+
+

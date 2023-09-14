@@ -45,9 +45,11 @@ namespace SqlLib
 
 
         public string kunde_navn { get; set; }
-        public string kune_adresse { get; set; }
+        public string kunde_adresse { get; set; }
         public string forsendelse { get; set; }
         public int antal_linjer { get; set; }
+
+        public List<PluklisteLinjer> linjer { get; set; }
     }
     public class PluklisteLinjer
     {
@@ -58,6 +60,8 @@ namespace SqlLib
         public int antal { get; set; }
 
         public string master { get; set; }
+        public string vare_type { get; set; }
+        public long vare_antal_paa_lager { get; set; }
 
     }
 

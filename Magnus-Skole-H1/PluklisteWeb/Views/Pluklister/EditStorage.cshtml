@@ -1,0 +1,55 @@
+﻿@model SqlLib.Vare
+
+@{
+    ViewData["Title"] = "EditStorage";
+}
+
+<h1>EditStorage</h1>
+
+<h4>Vare</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditStorage">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <p>Varenummer: @Html.DisplayFor(model => model.varenummer)</p>
+                <input asp-for="varenummer" type="hidden" class="form-control" asp-r />
+            </div>
+            <div class="form-group">
+                <p>Vare navn: @Html.DisplayFor(model => model.vare_navn)</p>
+                <input asp-for="vare_navn" type="hidden" class="form-control" readonly />
+                <span asp-validation-for="vare_navn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="vare_type_id" type="hidden" class="form-control" readonly />
+                <span asp-validation-for="vare_type_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <p>Vare type: @Html.DisplayFor(model => model.vare_type)</p>
+                <input asp-for="vare_type" type="hidden" class="form-control" readonly />
+                <span asp-validation-for="vare_type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <p>Antal: @Html.DisplayFor(model => model.paa_lager)</p>
+                <input asp-for="paa_lager" class="form-control" />
+                <span asp-validation-for="paa_lager" class="text-danger"></span>
+            </div>
+            <br />
+            <form method="post" asp-controller="Pluklister" asp-action="EditStorage">
+                <!-- Your input fields and other form elements -->
+                <button type="submit" class="btn btn-primary">Gem</button>
+            </form>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

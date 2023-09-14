@@ -1,0 +1,50 @@
+﻿@model IEnumerable<SqlLib.Vare>
+
+@{
+    ViewData["Title"] = "Storage";
+}
+
+<h1>Storage</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Varenummer
+            </th>
+            <th>
+                Vare navn
+            </th>
+
+            <th>
+                Type
+            </th>
+            <th>
+                Antal
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.varenummer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vare_navn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vare_type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.paa_lager)
+            </td>
+            <td>
+                @Html.ActionLink("Ret lager", "EditStorage", new {  varenummer=item.varenummer  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

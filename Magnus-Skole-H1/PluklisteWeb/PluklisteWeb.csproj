@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PluklisteLib\PluklisteLib.csproj" />
-    <ProjectReference Include="..\PluklisteWebApi\PluklisteWebApi.csproj" />
+    <ProjectReference Include="..\SqlLib\SqlLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

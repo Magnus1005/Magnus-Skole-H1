@@ -13,6 +13,65 @@ namespace SqlLib
     public class SqlInterface
     {
         public string connectionString = "Data Source=MN-Laptop\\MAGNUSH1SKOLESQL;Initial Catalog=PluklisteDB;Persist Security Info=True;User ID=sa;Password=101005;TrustServerCertificate=true";
+        public void AfslutPluksedel(int id)
+        {
+            using (SqlConnection myConnection = new SqlConnection(connectionString))
+            {
+                string oString = $"UPDATE lager.pluklister SET is_done = 1 WHERE plukliste_id = {id};";
+
+                try
+                {
+                    myConnection.Open();
+                    SqlCommand oCmd = new SqlCommand(oString, myConnection);
+                    using (SqlDataReader oReader = oCmd.ExecuteReader())
+                    {
+
+                        while (oReader.Read())
+                        {
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle any exceptions here
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+                finally
+                {
+                    myConnection.Close(); // Close the connection, whether an exception occurred or not
+                }
+            }
+        }
+
+        public void OpdaterLager(string varenummer, int paa_lager)
+        {
+            using (SqlConnection myConnection = new SqlConnection(connectionString))
+            {
+                string oString = $"UPDATE lager.vare SET paa_lager = {paa_lager} WHERE varenummer = '{varenummer}';";
+
+                try
+                {
+                    myConnection.Open();
+                    SqlCommand oCmd = new SqlCommand(oString, myConnection);
+                    using (SqlDataReader oReader = oCmd.ExecuteReader())
+                    {
+
+                        while (oReader.Read())
+                        {
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle any exceptions here
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+                finally
+                {
+                    myConnection.Close(); // Close the connection, whether an exception occurred or not
+                }
+            }
+        }
         public IList<T> getTableData<T>(T entryType, string tableName) where T : class // produktTyper
         {
             string fullTableName = "lager." + tableName;

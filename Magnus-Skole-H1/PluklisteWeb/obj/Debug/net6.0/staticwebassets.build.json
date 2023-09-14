@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "/CZnegfPRDa0DEWryCq3tlcQ3VkVS/0jAemCji2TX2w=",
+  "Hash": "Bsqyl2lGxT6uA/jMgWXgpkOSGFrv9+AyIF6C5hrFNCk=",
   "Source": "PluklisteWeb",
   "BasePath": "_content/PluklisteWeb",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "C:\\Users\\MagnusNissen\\OneDrive - HOUSE4IT A S\\Dokumenter\\GitHub\\Magnus-Skole-H1\\Magnus-Skole-H1\\PluklisteWebApi\\PluklisteWebApi.csproj",
-      "Version": 2,
-      "Source": "PluklisteWebApi",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
       "Name": "PluklisteWeb\\wwwroot",
