@@ -1,0 +1,12 @@
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\SqlLib.csproj.AssemblyReference.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\SqlLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\SqlLib.AssemblyInfoInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\SqlLib.AssemblyInfo.cs
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\SqlLib.csproj.CoreCompileInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\bin\Debug\net6.0\SqlLib.deps.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\bin\Debug\net6.0\SqlLib.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\bin\Debug\net6.0\SqlLib.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\SqlLib.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\refint\SqlLib.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\SqlLib.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\SqlLib\obj\Debug\net6.0\ref\SqlLib.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zAy/g3onETD7hZ9q3/1Wukp8B4NBMzYCeAOu0NND4sxAaLGdyf4OXNywitFXx+gt5bBfHbCDMGkwzW816XB+ug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MagnusNissen\\OneDrive - HOUSE4IT A S\\Dokumenter\\GitHub\\Magnus-Skole-H1\\Magnus-Skole-H1\\AgileUdvikling\\AgileUdvikling.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MagnusNissen\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\bin\Debug\net6.0\AgileUdvikling.exe
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\bin\Debug\net6.0\AgileUdvikling.deps.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\bin\Debug\net6.0\AgileUdvikling.runtimeconfig.json
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\bin\Debug\net6.0\AgileUdvikling.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\bin\Debug\net6.0\AgileUdvikling.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.csproj.AssemblyReference.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.AssemblyInfoInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.AssemblyInfo.cs
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.csproj.CoreCompileInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.csproj.CopyComplete
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\refint\AgileUdvikling.dll
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\AgileUdvikling.genruntimeconfig.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\AgileUdvikling\obj\Debug\net6.0\ref\AgileUdvikling.dll
