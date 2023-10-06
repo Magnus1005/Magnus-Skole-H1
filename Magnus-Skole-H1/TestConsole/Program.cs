@@ -6,9 +6,8 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            SQL _sql = new SQL();
-            List<Vare> gg = _sql.GetVarer();
-            List<Pluklister> pluklister = _sql.GetPluklister();
+            ExportFromSql exportFromSql = new ExportFromSql();
+            exportFromSql.Export(3);
 
             //SqlInterface sql = new SqlInterface();
             //var test = sql.getTableData("vare");

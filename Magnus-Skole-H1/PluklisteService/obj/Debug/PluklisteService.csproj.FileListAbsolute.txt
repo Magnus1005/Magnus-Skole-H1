@@ -1,0 +1,7 @@
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteService\bin\Debug\PluklisteService.exe.config
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteService\bin\Debug\PluklisteService.exe
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteService\bin\Debug\PluklisteService.pdb
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteService\obj\Debug\PluklisteService.csproj.AssemblyReference.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteService\obj\Debug\PluklisteService.csproj.CoreCompileInputs.cache
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteService\obj\Debug\PluklisteService.exe
+C:\Users\MagnusNissen\OneDrive - HOUSE4IT A S\Dokumenter\GitHub\Magnus-Skole-H1\Magnus-Skole-H1\PluklisteService\obj\Debug\PluklisteService.pdb

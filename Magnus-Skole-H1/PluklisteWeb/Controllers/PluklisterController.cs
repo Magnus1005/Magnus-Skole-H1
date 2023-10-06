@@ -78,6 +78,10 @@ namespace PluklisteWeb.Controllers
         {
             SQL _sql = new SQL();
             _sql.AfslutPlukseddel(id);
+
+            ExportFromSql exportFromSql = new ExportFromSql();
+            exportFromSql.Export(id);
+
             return RedirectToAction("Index");
             // Your method logic goes here
         }

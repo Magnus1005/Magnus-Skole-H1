@@ -41,11 +41,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluklisteLib", "PluklisteLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluklisteWebApi", "PluklisteWebApi\PluklisteWebApi.csproj", "{8874941F-3172-468A-A8A6-39712CE58494}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlLib", "SqlLib\SqlLib.csproj", "{D1575CE2-DE1A-43A6-BE80-3661718E065D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlLib", "SqlLib\SqlLib.csproj", "{D1575CE2-DE1A-43A6-BE80-3661718E065D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileUdvikling", "AgileUdvikling\AgileUdvikling.csproj", "{B37A89CC-BA31-4108-9121-ED7F916E4081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgileUdvikling", "AgileUdvikling\AgileUdvikling.csproj", "{B37A89CC-BA31-4108-9121-ED7F916E4081}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{996F75BF-12E3-4F1F-87E1-0199E70E94CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{996F75BF-12E3-4F1F-87E1-0199E70E94CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluklisteService", "PluklisteService\PluklisteService.csproj", "{2018C72A-B9EF-4C4D-9FDA-2E993B791E4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +135,10 @@ Global
 		{996F75BF-12E3-4F1F-87E1-0199E70E94CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{996F75BF-12E3-4F1F-87E1-0199E70E94CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{996F75BF-12E3-4F1F-87E1-0199E70E94CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2018C72A-B9EF-4C4D-9FDA-2E993B791E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2018C72A-B9EF-4C4D-9FDA-2E993B791E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2018C72A-B9EF-4C4D-9FDA-2E993B791E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2018C72A-B9EF-4C4D-9FDA-2E993B791E4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,6 +153,7 @@ Global
 		{8874941F-3172-468A-A8A6-39712CE58494} = {B84C8EBE-969E-4AD3-B937-B3E1BAE40578}
 		{D1575CE2-DE1A-43A6-BE80-3661718E065D} = {B84C8EBE-969E-4AD3-B937-B3E1BAE40578}
 		{996F75BF-12E3-4F1F-87E1-0199E70E94CD} = {B84C8EBE-969E-4AD3-B937-B3E1BAE40578}
+		{2018C72A-B9EF-4C4D-9FDA-2E993B791E4E} = {B84C8EBE-969E-4AD3-B937-B3E1BAE40578}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F033EC11-067F-4D0F-8994-B1FDCBF684CC}

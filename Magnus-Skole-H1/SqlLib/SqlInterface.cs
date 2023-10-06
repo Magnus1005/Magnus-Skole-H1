@@ -12,7 +12,7 @@ namespace SqlLib
 {
     public class SqlInterface
     {
-        public string connectionString = "Data Source=MN-Laptop\\MAGNUSH1SKOLESQL;Initial Catalog=PluklisteDB;Persist Security Info=True;User ID=sa;Password=101005;TrustServerCertificate=true";
+        public string connectionString = "Data Source=MN-Laptop\\MAGNUSH1SKOLESQL;Initial Catalog=PluklisteDB;Persist Security Info=True;User ID=superman;Password=101005;TrustServerCertificate=true";
         public void AfslutPluksedel(int id)
         {
             using (SqlConnection myConnection = new SqlConnection(connectionString))
